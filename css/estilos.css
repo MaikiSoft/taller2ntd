@@ -31,7 +31,12 @@
 }
 
 .table-villans{
+    display: flex;
     margin-top: 3%;
     margin: 3% auto 0px;
     max-width: 70%;
+}
+
+.card{
+    margin: 0 10px 0 10px;
 }
