@@ -9,6 +9,10 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <style>
+        body {
+            background: linear-gradient(to bottom, #ff0000, #0000ff);
+        }
+
         .carousel-item img {
             max-height: 100vh;
             object-fit: contain;
@@ -23,12 +27,51 @@
             left: 0;
             right: 0;
         }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            margin-left: 200px;
+            margin-right: 200px;
+
+        }
+
+        .modal-content {
+            background-color: #d4e3ff;
+            /* Cambiar color de fondo del modal a azul muy claro */
+        }
+
+        .modal-body img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 80%;
+            border: 4px solid #000;
+
+
+        }
+
+        .modal-content img {
+            width: 300px;
+            /* Ancho fijo */
+            height: 200px;
+            /* Alto fijo */
+            object-fit: cover;
+        }
+
+        .navbar {
+            background-color: #000;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+        }
     </style>
 </head>
 
 <body style="position: relative;">
+
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -39,31 +82,15 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="versiones.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown link
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
+
                     </ul>
                 </div>
             </div>
         </nav>
-
     </header>
+
     <br>
     <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -103,10 +130,10 @@
 
             <div class="carousel-item">
                 <img src="https://sm.ign.com/ign_es/screenshot/t/the-amazin/the-amazing-spider-man-2012-fourth-poster_rage.jpg"
-                    class="d-block w-100" alt="Slide 3">
+                    class="d-block w-100" alt="Slide 4">
                 <div class="carousel-overlay">
                     <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal3">
+                        data-bs-target="#exampleModal4">
                         Ver detalles
                     </button>
                 </div>
@@ -114,10 +141,10 @@
 
             <div class="carousel-item">
                 <img src="https://sm.ign.com/ign_es/screenshot/t/the-amazin/the-amazing-spider-man-2-2014-spidey-battle-poster_c79x.jpg"
-                    class="d-block w-100" alt="Slide 3">
+                    class="d-block w-100" alt="Slide 5">
                 <div class="carousel-overlay">
                     <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal3">
+                        data-bs-target="#exampleModal5">
                         Ver detalles
                     </button>
                 </div>
@@ -125,10 +152,10 @@
 
             <div class="carousel-item">
                 <img src="https://sm.ign.com/ign_es/screenshot/s/spider-man/spider-man-homecoming-avengers-tower-poster_1sa1.jpg"
-                    class="d-block w-100" alt="Slide 3">
+                    class="d-block w-100" alt="Slide 6">
                 <div class="carousel-overlay">
                     <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal3">
+                        data-bs-target="#exampleModal6">
                         Ver detalles
                     </button>
                 </div>
@@ -136,10 +163,10 @@
 
             <div class="carousel-item">
                 <img src="https://pics.filmaffinity.com/Spider_Man_Lejos_de_casa-642122608-large.jpg"
-                    class="d-block w-100" alt="Slide 3">
+                    class="d-block w-100" alt="Slide 7">
                 <div class="carousel-overlay">
                     <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal3">
+                        data-bs-target="#exampleModal7">
                         Ver detalles
                     </button>
                 </div>
@@ -147,27 +174,18 @@
 
             <div class="carousel-item">
                 <img src="https://www.sonypictures.com.co/sites/colombia/files/2022-04/SNH_LAS_OnLine_1400x2075.jpg"
-                    class="d-block w-100" alt="Slide 3">
+                    class="d-block w-100" alt="Slide 8">
                 <div class="carousel-overlay">
                     <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal3">
+                        data-bs-target="#exampleModal8">
                         Ver detalles
                     </button>
                 </div>
             </div>
 
-            <div class="carousel-item">
-                <img src="https://rtvc-assets-radionica3.s3.amazonaws.com/s3fs-public/inline-images/Sp-Poster_0.jpg"
-                    class="d-block w-100" alt="Slide 3">
-                <div class="carousel-overlay">
-                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal3">
-                        Ver detalles
-                    </button>
-                </div>
-            </div>
+           
         </div>
-        
+
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Anterior</span>
@@ -188,11 +206,19 @@
                 </div>
                 <div class="modal-body">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXurLMGIbyKul06j0ySAFDC1oMgIP8aySoOnxfHSDrd6i04kaV5nGX1uo7kn7t2XoxAeY&usqp=CAU"
-                        class="img-fluid" alt="Spider-Man: De Regreso a Casa">
+                        class="img-fluid" alt="Spider-Man">
                     <br><br>
-                    <p><b>Director:</b> Jon Watts</p>
-                    <p><b>Protegonista:</b>Tobey Maguire</p>
-                    <p><b>Estreno:</b> 2002</p>
+                    <p><b>Director:</b>Sam Raimi</p>
+                    <p><b>Protagonista:</b>Tobey Maguire</p>
+                    <p><b>Estreno:</b>3 de mayo de 2002</p>
+                    <p>La película narra la transformación del tímido estudiante de secundaria en un poderoso héroe
+                        arácnido después de ser picado por una araña genéticamente modificada. La trama sigue a Parker
+                        mientras lucha contra el crimen y trata de equilibrar su vida personal con su identidad secreta.
+                        "Spider-Man" fue un éxito de taquilla y marcó el comienzo de una exitosa trilogía
+                        cinematográfica. </p>
+                    <a href="https://www.amazon.com/-/es/Tobey-Maguire/dp/B000O19EWK/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3K10X5XIVTBIT&dib=eyJ2IjoiMSJ9.S9wNuj-5brRGeB3lorCOpmYoUMZKs2KftMzhxGlfeXgILFkb3TD9ZSrLveWQ0NkpewWSV89iXOBCzMEWfn6SSxqc6pictPr52_znFlunHJH6i2gkVr9D6cibZRQmO4igPm6JXlVXZHt8q8jRjuGO1Mt6DoVbDZMQdppBWShQdcZ27dKhIkmRfgV-vla-931aDGw-am4yMhnerZ7PATSUvQWAxRKTxWMNXMJgIp5JyXY.c9wiYCsSegMNVvyLiaD-NKxr6Yd0tDKz2iNq6bBjd5I&dib_tag=se&keywords=el+hombre+ara%C3%B1a+2002&qid=1709314668&sprefix=el+hombre+ara%C3%B1a+2002%2Caps%2C301&sr=8-1"
+                        target="_blank">Comprar
+                        Película</a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -207,15 +233,20 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel2">Spider-Man: Lejos de Casa</h5>
+                    <h5 class="modal-title" id="exampleModalLabel2">Spider-Man 2</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="https://via.placeholder.com/150x200?text=Spider-Man+2" class="img-fluid"
-                        alt="Spider-Man: Lejos de Casa">
-                    <p><strong>Director:</strong> Jon Watts</p>
-                    <p><strong>Reparto:</strong> Tom Holland, Jake Gyllenhaal, Zendaya</p>
-                    <p><strong>Estreno:</strong> 2019</p>
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTQ3NzQ0NTg2OV5BMl5BanBnXkFtZTYwMzE3NzY3._V1_.jpg"
+                        class="img-fluid" alt="Spaiderman 2" alt="Spider-Man 2"><br><br>
+                    <p><strong>Director:</strong>Sam Raimi</p>
+                    <p><strong>Protagonista:</strong>Tobey Maguire</p>
+                    <p><strong>Estreno:</strong>30 junio 2004</p>
+                    <p>En esta entrega, Peter lucha por equilibrar su vida como superhéroe con sus responsabilidades
+                        personales, mientras enfrenta nuevos desafíos, incluido el villano Dr. Octopus. "Spider-Man 2"
+                        también fue bien recibida por la crítica y tuvo un gran éxito comercial.</p>
+                    <a href="https://www.amazon.com/-/es/Tobey-Maguire/dp/B000I9YV2Q/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=OZ4JTJW3KRPO&dib=eyJ2IjoiMSJ9.6qn7876-Y5Mb_Mdv5G5U9VIx705Lda0TpiB10cJNscSIgF06GTSo6YLdS9lFGzyeLty1lPii48AkJ4dQQdDOV_keqllrhZZF6e-sjqnvNH2bSWrMStw19o9NK_1e_z8dW5SYjV9dm6XAidrpEVp3m2sSMrzKAQfK9bpyZdKYxpOypCIREVVEy0KCcZ7uErKtUFg5YRl9HVVXmqB4sl118dkTjnsROqgolmMmBWN0PrQ.7U4gwupXyGxt4FZgZxbKcefTtyEhhrkPbuGhcWSPGjM&dib_tag=se&keywords=spiderman+2&qid=1709325952&s=instant-video&sprefix=spiderman+2%2Cinstant-video%2C284&sr=1-1"
+                        target="_blank">Comprar película</a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -230,23 +261,177 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel3">Spider-Man: Sin Camino a Casa</h5>
+                    <h5 class="modal-title" id="exampleModalLabel3">Spider-Man 3</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="https://via.placeholder.com/150x200?text=Spider-Man+3" class="img-fluid"
-                        alt="Spider-Man: Sin Camino a Casa">
-                    <p><strong>Director:</strong> Jon Watts</p>
-                    <p><strong>Reparto:</strong> Tom Holland, Zendaya, Benedict Cumberbatch</p>
-                    <p><strong>Estreno:</strong> 2021</p>
+                    <img src="https://s3.us-west-1.amazonaws.com/esdelatino.com/wp-content/uploads/2023/09/23135937/La-figura-de-Hot-Toys-de-Spider-Man-3-pone-a.jpg"
+                        class="img-fluid" alt="Spider-Man: 3">
+                        <br><br>
+                    <p><strong>Director:</strong>Sam Raimi</p>
+                    <p><strong>Protagonista:</strong>Tobey Maguire</p>
+                    <p><strong>Estreno:</strong>4 de mayo 2007</p>
+                    <p>En esta película, Peter enfrenta nuevos desafíos, incluida la lucha contra su oscuro alter ego
+                        después de ser afectado por una sustancia extraterrestre. Además, debe enfrentarse a nuevos
+                        villanos, como Venom y Sandman, mientras lidia con problemas personales y sentimentales. Aunque
+                        tuvo un éxito considerable en taquilla, "Spider-Man 3" recibió críticas mixtas, especialmente en
+                        comparación con sus predecesoras.</p>
+                        <a href="https://www.amazon.com/-/es/Tobey-Maguire/dp/B000UU4NE4/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2ZII86WSKATMG&dib=eyJ2IjoiMSJ9.YeK_X0gtSjALWrjGJj_zvBUigT7cM1PCQEoHEw7N2mHI1grKKsW5JbTZovZUU4YUDEe_t1Lcs9QQ3Dvl-HDuwI52qynPKGdZ5mrSx-ErXvgSf_9J32aHdE0CJC40JgwB9Lq6Ec8o7TOTJkpvUGHG4ySN1FVjEWd8DqOriSoVTetKFX22JIFZZs_rG5Wpswtxu8GzuBsmsIL9HLRVanEmt8SuU8Le4jvdOU54DROEUYI.UjYb_xQxIY_Cw8xPlpnCUtcai6Pna5ZMlhbCfQZ8WiU&dib_tag=se&keywords=spiderman+3&qid=1709326669&s=instant-video&sprefix=spiderman+3%2Cinstant-video%2C255&sr=1-1" target="_blank">Comprar película</a>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    
+
                 </div>
             </div>
         </div>
     </div>
+
+
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">El Sorprendente hombre araña </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://www.elheraldo.co/sites/default/files/body/2012/07/26/articulo/DF-04167.jpg"
+                        class="img-fluid" alt="El sorprendente hombre araña">
+                    <br><br>
+                    <p><b>Director:</b>Marc Webb</p>
+                    <p><b>Protagonista:</b>Andrew Garfield</p>
+                    <p><b>Estreno:</b>3 de julio de 2012</p>
+                    <p>Esta película no está relacionada con la trilogía de Spider-Man dirigida por Sam Raimi. En cambio, es un reinicio de la franquicia, con Andrew Garfield asumiendo el papel de Peter Parker / Spider-Man. La trama sigue a Peter mientras descubre sus habilidades arácnidas después de ser picado por una araña genéticamente modificada y lucha contra el crimen mientras investiga la misteriosa desaparición de sus padres. "El Sorprendente Hombre Araña" fue bien recibida por la crítica.</p>
+                    <a href="https://www.amazon.com/-/es/Andrew-Garfield/dp/B009B0JQ8M/ref=sr_1_1?crid=1M5YZ9UNKMO1E&dib=eyJ2IjoiMSJ9.wgRdDnwHjcsMgKTllQgrdLLoFHXf_Uv1A48uHlP0maNskwWBQuokjjPJVYvM5blIX5K5CkGAiZjvbmk7my6mN_hbq5YmZYJmbgi1HAzR2zRP2d6REnSBALwjWs14pGUZofW6YJ5sNHl1uw8PvWBsUMROlAaO7z3QQPqOkBQKT8V5Ymmb3ccI1jSEAoM2Q-TpP7ibTJINtewLRDQtgJVT2XIoRZQ5G1i3ZNayx5CTpyA.Ibm5mwfDJswGacTp8IN-eLu3dfBCVMuwVeazT-Lbq2E&dib_tag=se&keywords=the+amazing+spider-man&qid=1709327037&s=instant-video&sprefix=the+amazing+%2Cinstant-video%2C384&sr=1-1" target="_blank">Comprar película</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal 5 -->
+    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">El sorprendente hombre araña 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://2.blogs.elcomercio.pe/universocomic/wp-content/uploads/sites/128/2014/05/Poster-Movie-300x158.jpg"
+                        class="img-fluid" alt="El sorprendente hombre araña 2">
+                    <br><br>
+                    <p><b>Director:</b>Marc Webb</p>
+                    <p><b>Protagonista:</b>Andrew Garfield</p>
+                    <p><b>Estreno:</b>17 de abril de 2014</p>
+                    <p>Fue lanzada el 17 de abril de 2014. En esta secuela, Peter enfrenta nuevos desafíos mientras lucha contra poderosos enemigos como Electro y el Duende Verde, mientras también explora más sobre su pasado y sus relaciones personales. recibió críticas mixtas por parte de la crítica.</p>
+                    <a href="https://www.amazon.com/-/es/Andrew-Garfield/dp/B00PU5IZXY/ref=sr_1_2?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dib=eyJ2IjoiMSJ9.B6ztkuf5DLabKXuhzKhTDvD7RzVPgevB7BeurOiRUxEDkM_QZO67rCD1DU7EH2oYAuwc51phwJAA3aek4H5fNflHEJq0hbj1uy8HC5XvrO7xQlSSF3bB-BeTPu97HHbHB0QTgH7N4I7GWe04VPf_xmZWkSE8EUm8xIQ8iXhQhd0cKDI3nmSBtHN6cU2hKPcM1ttp-u1KkBn8POjYctnLHRy67BrWyxEwhLV_Pd2c6I0.kdzcfPVFJ2bIgUzTcrY-5p5SUhavLLCvCIZedgMHl_w&dib_tag=se&keywords=the+amazing+spider-man+2&qid=1709327803&s=instant-video&sr=1-2" target="_blank">Comprar película</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal 6 -->
+    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Spider-Man: de regreso a casa </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://i.ytimg.com/vi/sfPWvYKKAJ4/maxresdefault.jpg"
+                        class="img-fluid" alt="Spider-Man: De Regreso a Casa">
+                    <br><br>
+                    <p><b>Director:</b> Jon Watts</p>
+                    <p><b>Protagonista:</b>Tom Holland</p>
+                    <p><b>Estreno:</b>7 junio 2017</p>
+                    <p>La película sigue a Peter Parker mientras intenta equilibrar su vida como estudiante de secundaria con su recién descubierta identidad como Spider-Man. En esta entrega, Peter lucha contra el villano Vulture mientras recibe orientación de su mentor, Tony Stark / Iron Man. "Spider-Man: De Regreso a Casa" fue elogiada por su tono fresco, las actuaciones del elenco y la incorporación del personaje dentro del MCU.</p>
+                    <a href="https://www.amazon.com/-/es/Tom-Holland/dp/B073HMHSFT/ref=sr_1_1?crid=MV4ZYR3GTBMB&dib=eyJ2IjoiMSJ9.zk-jiw2vQaedUOEdMBiSsqbbXXCqxgtpK2GmeOAQ-_lmvs58DopFkHIxSmAR5AwBQXT4d2mknUf8TX8z1M-4oJWPwoZfC_hLNaePVY-wxdjYyse8C4gWK2Opi_dPNbGQEla8g6LiUUbf6yy6MDHb9NUw87vtYansLkyCZW46oO5TvSo2b53JOEqpLusCaQ4NRUVhzezddHAvpRyEe42QRDEhAyaqJXfDSd3I3IZwUE0.d2xL8Xawct6ZX8TqLS0hbhXmFajdFxCqZQrCJ4lhGSU&dib_tag=se&keywords=spiderman+homecoming&qid=1709328392&s=instant-video&sprefix=spiderman+ho%2Cinstant-video%2C177&sr=1-1" target="_blank">Comprar película</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal 7 -->
+    <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Spider-Man: Lejos de casa </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://es.web.img2.acsta.net/r_1280_720/pictures/19/05/08/08/16/5260017.jpg"
+                        class="img-fluid" alt="Spider-Man: Lejos de casa">
+                    <br><br>
+                    <p><b>Director:</b> Jon Watts</p>
+                    <p><b>Protagonista:</b>Tom Holland</p>
+                    <p><b>Estreno:</b>2 de julio de 2019.</p>
+                    <p> En esta entrega, Peter se embarca en unas vacaciones escolares por Europa, pero pronto se ve obligado a enfrentarse a nuevos desafíos cuando aparece el misterioso Quentin Beck / Mysterio. "Spider-Man: Lejos de Casa" recibió elogios por su acción, humor y las actuaciones del elenco, y también estableció importantes desarrollos en la trama del MCU después de los eventos de "Avengers: Endgame".</p>
+                     <a href="https://www.amazon.com/-/es/Tom-Holland/dp/B07TKZQFJC/ref=sr_1_4?crid=MV4ZYR3GTBMB&dib=eyJ2IjoiMSJ9.zk-jiw2vQaedUOEdMBiSsqbbXXCqxgtpK2GmeOAQ-_lmvs58DopFkHIxSmAR5AwBQXT4d2mknUf8TX8z1M-4oJWPwoZfC_hLNaePVY-wxdjYyse8C4gWK2Opi_dPNbGQEla8g6LiUUbf6yy6MDHb9NUw87vtYansLkyCZW46oO5TvSo2b53JOEqpLusCaQ4NRUVhzezddHAvpRyEe42QRDEhAyaqJXfDSd3I3IZwUE0.d2xL8Xawct6ZX8TqLS0hbhXmFajdFxCqZQrCJ4lhGSU&dib_tag=se&keywords=spiderman+homecoming&qid=1709329005&s=instant-video&sprefix=spiderman+ho%2Cinstant-video%2C177&sr=1-4" target="_blank">Comprar Película</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal 8 -->
+    <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Spider-Man: Sin camino a casa </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2021/03/db9960b2dec9108169f86290953e15caef59dc62_s2_n1-scaled.jpeg?fit=2560%2C1289&quality=50&strip=all&ssl=1"
+                        class="img-fluid" alt="Spider-Man: Sin Camino A Casa">
+                    <br><br>
+                    <p><b>Director:</b>Jon Watts</p>
+                    <p><b>Protagonista:</b>Tom Holland</p>
+                    <p><b>Estreno:</b>17 de diciembre de 2021</p>
+                    <p>Es la tercera entrega de la trilogía de Spider-Man protagonizada por Tom Holland. En esta película, Peter Parker se enfrenta a las consecuencias legales y personales después de que su identidad secreta sea revelada al mundo. La trama se desarrolla con la ayuda del Dr. Strange y la manifestación del multiverso, trayendo de vuelta a villanos como Duende Verde, Electro y Dr. Octopus. La película ha batido récords de taquilla, superando las expectativas con una recaudación de 260 millones de dólares en Estados Unidos en su primer fin de semana. 'Spider-Man: Sin Camino a Casa' ha sido elogiada por su cuidado fanservice, ritmo, desarrollo de personajes y efectos especiales, siendo considerada la mejor película de la trilogía del Hombre Araña del UCM</p>
+                    <a href="https://www.amazon.com/-/es/Tom-Holland/dp/B09NMFW4W7/ref=sr_1_1?crid=1C22X4FA0MD5D&dib=eyJ2IjoiMSJ9.KP_1aQWbgcRYJCAm1qRWa7fpkE7sWMYGekLxqNuK_dndc8geWHIc94_dlK6_dF1bYmGdYhC1ixBWiJQYU5VGVt-hzyOts6Za8M40oTmmk6RxqpdBwvTHUMyBk0f_gJRODqDVBMC08IEuoGyBrVZMwEgMtsz6c62oaVeJKlNSw-d65dvOxkenvdLVhHcbPmLqDy8PT6dtE2hxrAXsUneETV1YvcrflDaydA_M2GHw0q4.bIuCp5Pg5ZKHdg7y7F-g6UufXmGbGxqtwITDvhIXQW0&dib_tag=se&keywords=spider+man+no+way+home&qid=1709330442&s=instant-video&sprefix=spider%2Cinstant-video%2C424&sr=1-1" target="_blank">Comprar película</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+  
+
+
 
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
