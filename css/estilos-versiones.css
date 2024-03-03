@@ -64,3 +64,30 @@ img{
         rotateY(-10deg)
     ;
 }
+
+.imgTopBar{
+    height: 50px;
+    width: 100px;
+  }
+
+  .seleccionMask{
+    height: 50px;
+    width: 60px;
+    display:block;
+    
+  }
+  
+  .seleccionPel {
+    height: 18px;
+    width: 100px;
+    display:block;
+  }
+
+  .seleccionPel:hover{
+    content:url(../img/PeliculasS.png); 
+  }
+
+  .bckInicio{
+    background-image: linear-gradient(red, cornflowerblue);
+   
+  }

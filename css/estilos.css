@@ -71,6 +71,31 @@
     width: 100%; 
   }
   
+  .imgTopBar{
+    height: 50px;
+    width: 100px;
+  }
+
+  .seleccionVer {
+    height: 18px;
+    width: 100px;
+    display:block;
+  }
+  
+  .seleccionVer:hover{
+    content:url(../img/VersionesS.png); 
+  }
+
+  .seleccionPel {
+    height: 18px;
+    width: 100px;
+    display:block;
+  }
+
+  .seleccionPel:hover{
+    content:url(../img/PeliculasS.png); 
+  }
+
   .bckInicio{
     background-image: linear-gradient(red, cornflowerblue);
   }
