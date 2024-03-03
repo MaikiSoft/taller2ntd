@@ -1,105 +1,133 @@
 .cont-imagen {
-    max-height: 700px;
-    overflow: hidden;
+  max-height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+
+.encimaCarusel {
+  height: 500px;
+  width: 900px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .img-fluid {
-    opacity: 70%;
+  opacity: 70%;
 }
 
 
 .cont-principal {
-    margin-top: 3%;
-    display: flex;
+  margin-top: 3%;
+  display: flex;
 }
 
 .text {
-    margin: 20px 20px 20px 15%;
-    width: 30%;
+  margin: 20px 20px 20px 15%;
+  width: 30%;
 }
 
 .imgs {
-    margin: 90px;
-    width: 40%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 90px;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .imgs .imagen {
-    max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 
 .table-villans {
-    display: flex;
-    margin-top: 3%;
-    margin: 3% auto 0px;
-    max-width: 70%;
+  display: flex;
+  margin-top: 3%;
+  margin: 3% auto 0px;
+  max-width: 70%;
 }
 
 .card {
-    margin: 0 10px 20px 10px;
+  margin: 0 10px 20px 10px;
 
 }
 
 .card-img-top {
-    object-fit: cover; 
-    height: 200px; 
-    width: 100%; 
-  }
-  
-  .card-body {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-  
-  .card-title {
-    margin-bottom: auto; 
-    margin-top: 0;
-  }
-  .card-text {
-    flex-grow: 1; 
-    overflow: hidden;
-  }
-  
-  .btn {
-    margin-top: auto; 
-    width: 100%; 
-  }
-  
-  .imgTopBar{
-    height: 50px;
-    width: 100px;
-  }
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
 
-  .seleccionVer {
-    height: 18px;
-    width: 100px;
-    display:block;
-  }
-  
-  .seleccionVer:hover{
-    content:url(../img/VersionesS.png); 
-  }
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
-  .seleccionPel {
-    height: 18px;
-    width: 100px;
-    display:block;
-  }
+.card-title {
+  margin-bottom: auto;
+  margin-top: 0;
+}
 
-  .seleccionPel:hover{
-    content:url(../img/PeliculasS.png); 
-  }
+.card-text {
+  flex-grow: 1;
+  overflow: hidden;
+}
 
-  .bckInicio{
-    background-image: linear-gradient(red, cornflowerblue);
-  }
+.btn {
+  margin-top: auto;
+  width: 100%;
+}
 
-  .bckVillanos{
-    background-color: darkslateblue;
-  }
+.imgTopBar {
+  height: 50px;
+  width: 100px;
+}
+
+.seleccionVer {
+  height: 18px;
+  width: 100px;
+  display: block;
+}
+
+.seleccionVer:hover {
+  content: url(../img/VersionesS.png);
+}
+
+.seleccionPel {
+  height: 18px;
+  width: 100px;
+  display: block;
+}
+
+.seleccionPel:hover {
+  content: url(../img/PeliculasS.png);
+}
+
+.seleccionVJ {
+  height: 18px;
+  width: 100px;
+  display: block;
+}
+
+.seleccionVJ:hover {
+  content: url(../img/VideoJuegosS.png);
+}
+
+.seleccionMask{
+  height: 50px;
+  width: 60px;
+  display:block;
+}
+
+.bckInicio {
+  background-image: linear-gradient(red, cornflowerblue);
+}
+
+.bckVillanos {
+  background-color: darkslateblue;
+}
