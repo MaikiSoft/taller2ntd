@@ -65,15 +65,55 @@
         .navbar-nav .nav-link {
             color: #fff;
         }
+
+        .bckInicio {
+            background-image: linear-gradient(red, cornflowerblue);
+        }
+
+        .imgTopBar {
+            height: 50px;
+            width: 100px;
+        }
+
+        .seleccionVer {
+            height: 18px;
+            width: 100px;
+            display: block;
+        }
+
+        .seleccionPel {
+            height: 18px;
+            width: 100px;
+            display: block;
+        }
+
+        .seleccionMask {
+            height: 50px;
+            width: 60px;
+            display: block;
+        }
+
+        .navbar-nav {
+            align-items: center;
+
+        }
+
+        .seleccionVJ {
+            height: 18px;
+            width: 100px;
+            display: block;
+        }
     </style>
 </head>
 
 <body style="position: relative;">
-
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+            <div class="container-fluid bckInicio">
+                <a class="navbar-brand" href="index.html"> <img src="img/SpidermanLogo.png" alt="PRINCIPAL"
+                        class="imgTopBar"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -82,13 +122,33 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="versiones.html"> <img
+                                    src="img/VersionesOP.png" alt="VERSIONES" class="seleccionVer"> </a>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="videojuegos.html"><img src="img/VideoJuegosOP.png"
+                                    alt="VIDEOJUEGOS" class="seleccionVJ"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"> <img src="img/SpiderMask.png" alt="SELECCION"
+                                    class="seleccionMask"></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown link
+                            </a>
+                            <ul class="dropdown-menu bckInicio">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
     </header>
 
     <br>
@@ -183,7 +243,7 @@
                 </div>
             </div>
 
-           
+
         </div>
 
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -267,7 +327,7 @@
                 <div class="modal-body">
                     <img src="https://s3.us-west-1.amazonaws.com/esdelatino.com/wp-content/uploads/2023/09/23135937/La-figura-de-Hot-Toys-de-Spider-Man-3-pone-a.jpg"
                         class="img-fluid" alt="Spider-Man: 3">
-                        <br><br>
+                    <br><br>
                     <p><strong>Director:</strong>Sam Raimi</p>
                     <p><strong>Protagonista:</strong>Tobey Maguire</p>
                     <p><strong>Estreno:</strong>4 de mayo 2007</p>
@@ -276,7 +336,8 @@
                         villanos, como Venom y Sandman, mientras lidia con problemas personales y sentimentales. Aunque
                         tuvo un éxito considerable en taquilla, "Spider-Man 3" recibió críticas mixtas, especialmente en
                         comparación con sus predecesoras.</p>
-                        <a href="https://www.amazon.com/-/es/Tobey-Maguire/dp/B000UU4NE4/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2ZII86WSKATMG&dib=eyJ2IjoiMSJ9.YeK_X0gtSjALWrjGJj_zvBUigT7cM1PCQEoHEw7N2mHI1grKKsW5JbTZovZUU4YUDEe_t1Lcs9QQ3Dvl-HDuwI52qynPKGdZ5mrSx-ErXvgSf_9J32aHdE0CJC40JgwB9Lq6Ec8o7TOTJkpvUGHG4ySN1FVjEWd8DqOriSoVTetKFX22JIFZZs_rG5Wpswtxu8GzuBsmsIL9HLRVanEmt8SuU8Le4jvdOU54DROEUYI.UjYb_xQxIY_Cw8xPlpnCUtcai6Pna5ZMlhbCfQZ8WiU&dib_tag=se&keywords=spiderman+3&qid=1709326669&s=instant-video&sprefix=spiderman+3%2Cinstant-video%2C255&sr=1-1" target="_blank">Comprar película</a>
+                    <a href="https://www.amazon.com/-/es/Tobey-Maguire/dp/B000UU4NE4/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2ZII86WSKATMG&dib=eyJ2IjoiMSJ9.YeK_X0gtSjALWrjGJj_zvBUigT7cM1PCQEoHEw7N2mHI1grKKsW5JbTZovZUU4YUDEe_t1Lcs9QQ3Dvl-HDuwI52qynPKGdZ5mrSx-ErXvgSf_9J32aHdE0CJC40JgwB9Lq6Ec8o7TOTJkpvUGHG4ySN1FVjEWd8DqOriSoVTetKFX22JIFZZs_rG5Wpswtxu8GzuBsmsIL9HLRVanEmt8SuU8Le4jvdOU54DROEUYI.UjYb_xQxIY_Cw8xPlpnCUtcai6Pna5ZMlhbCfQZ8WiU&dib_tag=se&keywords=spiderman+3&qid=1709326669&s=instant-video&sprefix=spiderman+3%2Cinstant-video%2C255&sr=1-1"
+                        target="_blank">Comprar película</a>
 
                 </div>
                 <div class="modal-footer">
@@ -304,8 +365,14 @@
                     <p><b>Director:</b>Marc Webb</p>
                     <p><b>Protagonista:</b>Andrew Garfield</p>
                     <p><b>Estreno:</b>3 de julio de 2012</p>
-                    <p>Esta película no está relacionada con la trilogía de Spider-Man dirigida por Sam Raimi. En cambio, es un reinicio de la franquicia, con Andrew Garfield asumiendo el papel de Peter Parker / Spider-Man. La trama sigue a Peter mientras descubre sus habilidades arácnidas después de ser picado por una araña genéticamente modificada y lucha contra el crimen mientras investiga la misteriosa desaparición de sus padres. "El Sorprendente Hombre Araña" fue bien recibida por la crítica.</p>
-                    <a href="https://www.amazon.com/-/es/Andrew-Garfield/dp/B009B0JQ8M/ref=sr_1_1?crid=1M5YZ9UNKMO1E&dib=eyJ2IjoiMSJ9.wgRdDnwHjcsMgKTllQgrdLLoFHXf_Uv1A48uHlP0maNskwWBQuokjjPJVYvM5blIX5K5CkGAiZjvbmk7my6mN_hbq5YmZYJmbgi1HAzR2zRP2d6REnSBALwjWs14pGUZofW6YJ5sNHl1uw8PvWBsUMROlAaO7z3QQPqOkBQKT8V5Ymmb3ccI1jSEAoM2Q-TpP7ibTJINtewLRDQtgJVT2XIoRZQ5G1i3ZNayx5CTpyA.Ibm5mwfDJswGacTp8IN-eLu3dfBCVMuwVeazT-Lbq2E&dib_tag=se&keywords=the+amazing+spider-man&qid=1709327037&s=instant-video&sprefix=the+amazing+%2Cinstant-video%2C384&sr=1-1" target="_blank">Comprar película</a>
+                    <p>Esta película no está relacionada con la trilogía de Spider-Man dirigida por Sam Raimi. En
+                        cambio, es un reinicio de la franquicia, con Andrew Garfield asumiendo el papel de Peter Parker
+                        / Spider-Man. La trama sigue a Peter mientras descubre sus habilidades arácnidas después de ser
+                        picado por una araña genéticamente modificada y lucha contra el crimen mientras investiga la
+                        misteriosa desaparición de sus padres. "El Sorprendente Hombre Araña" fue bien recibida por la
+                        crítica.</p>
+                    <a href="https://www.amazon.com/-/es/Andrew-Garfield/dp/B009B0JQ8M/ref=sr_1_1?crid=1M5YZ9UNKMO1E&dib=eyJ2IjoiMSJ9.wgRdDnwHjcsMgKTllQgrdLLoFHXf_Uv1A48uHlP0maNskwWBQuokjjPJVYvM5blIX5K5CkGAiZjvbmk7my6mN_hbq5YmZYJmbgi1HAzR2zRP2d6REnSBALwjWs14pGUZofW6YJ5sNHl1uw8PvWBsUMROlAaO7z3QQPqOkBQKT8V5Ymmb3ccI1jSEAoM2Q-TpP7ibTJINtewLRDQtgJVT2XIoRZQ5G1i3ZNayx5CTpyA.Ibm5mwfDJswGacTp8IN-eLu3dfBCVMuwVeazT-Lbq2E&dib_tag=se&keywords=the+amazing+spider-man&qid=1709327037&s=instant-video&sprefix=the+amazing+%2Cinstant-video%2C384&sr=1-1"
+                        target="_blank">Comprar película</a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -332,8 +399,12 @@
                     <p><b>Director:</b>Marc Webb</p>
                     <p><b>Protagonista:</b>Andrew Garfield</p>
                     <p><b>Estreno:</b>17 de abril de 2014</p>
-                    <p>Fue lanzada el 17 de abril de 2014. En esta secuela, Peter enfrenta nuevos desafíos mientras lucha contra poderosos enemigos como Electro y el Duende Verde, mientras también explora más sobre su pasado y sus relaciones personales. recibió críticas mixtas por parte de la crítica.</p>
-                    <a href="https://www.amazon.com/-/es/Andrew-Garfield/dp/B00PU5IZXY/ref=sr_1_2?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dib=eyJ2IjoiMSJ9.B6ztkuf5DLabKXuhzKhTDvD7RzVPgevB7BeurOiRUxEDkM_QZO67rCD1DU7EH2oYAuwc51phwJAA3aek4H5fNflHEJq0hbj1uy8HC5XvrO7xQlSSF3bB-BeTPu97HHbHB0QTgH7N4I7GWe04VPf_xmZWkSE8EUm8xIQ8iXhQhd0cKDI3nmSBtHN6cU2hKPcM1ttp-u1KkBn8POjYctnLHRy67BrWyxEwhLV_Pd2c6I0.kdzcfPVFJ2bIgUzTcrY-5p5SUhavLLCvCIZedgMHl_w&dib_tag=se&keywords=the+amazing+spider-man+2&qid=1709327803&s=instant-video&sr=1-2" target="_blank">Comprar película</a>
+                    <p>Fue lanzada el 17 de abril de 2014. En esta secuela, Peter enfrenta nuevos desafíos mientras
+                        lucha contra poderosos enemigos como Electro y el Duende Verde, mientras también explora más
+                        sobre su pasado y sus relaciones personales. recibió críticas mixtas por parte de la crítica.
+                    </p>
+                    <a href="https://www.amazon.com/-/es/Andrew-Garfield/dp/B00PU5IZXY/ref=sr_1_2?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dib=eyJ2IjoiMSJ9.B6ztkuf5DLabKXuhzKhTDvD7RzVPgevB7BeurOiRUxEDkM_QZO67rCD1DU7EH2oYAuwc51phwJAA3aek4H5fNflHEJq0hbj1uy8HC5XvrO7xQlSSF3bB-BeTPu97HHbHB0QTgH7N4I7GWe04VPf_xmZWkSE8EUm8xIQ8iXhQhd0cKDI3nmSBtHN6cU2hKPcM1ttp-u1KkBn8POjYctnLHRy67BrWyxEwhLV_Pd2c6I0.kdzcfPVFJ2bIgUzTcrY-5p5SUhavLLCvCIZedgMHl_w&dib_tag=se&keywords=the+amazing+spider-man+2&qid=1709327803&s=instant-video&sr=1-2"
+                        target="_blank">Comprar película</a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -354,14 +425,19 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="https://i.ytimg.com/vi/sfPWvYKKAJ4/maxresdefault.jpg"
-                        class="img-fluid" alt="Spider-Man: De Regreso a Casa">
+                    <img src="https://i.ytimg.com/vi/sfPWvYKKAJ4/maxresdefault.jpg" class="img-fluid"
+                        alt="Spider-Man: De Regreso a Casa">
                     <br><br>
                     <p><b>Director:</b> Jon Watts</p>
                     <p><b>Protagonista:</b>Tom Holland</p>
                     <p><b>Estreno:</b>7 junio 2017</p>
-                    <p>La película sigue a Peter Parker mientras intenta equilibrar su vida como estudiante de secundaria con su recién descubierta identidad como Spider-Man. En esta entrega, Peter lucha contra el villano Vulture mientras recibe orientación de su mentor, Tony Stark / Iron Man. "Spider-Man: De Regreso a Casa" fue elogiada por su tono fresco, las actuaciones del elenco y la incorporación del personaje dentro del MCU.</p>
-                    <a href="https://www.amazon.com/-/es/Tom-Holland/dp/B073HMHSFT/ref=sr_1_1?crid=MV4ZYR3GTBMB&dib=eyJ2IjoiMSJ9.zk-jiw2vQaedUOEdMBiSsqbbXXCqxgtpK2GmeOAQ-_lmvs58DopFkHIxSmAR5AwBQXT4d2mknUf8TX8z1M-4oJWPwoZfC_hLNaePVY-wxdjYyse8C4gWK2Opi_dPNbGQEla8g6LiUUbf6yy6MDHb9NUw87vtYansLkyCZW46oO5TvSo2b53JOEqpLusCaQ4NRUVhzezddHAvpRyEe42QRDEhAyaqJXfDSd3I3IZwUE0.d2xL8Xawct6ZX8TqLS0hbhXmFajdFxCqZQrCJ4lhGSU&dib_tag=se&keywords=spiderman+homecoming&qid=1709328392&s=instant-video&sprefix=spiderman+ho%2Cinstant-video%2C177&sr=1-1" target="_blank">Comprar película</a>
+                    <p>La película sigue a Peter Parker mientras intenta equilibrar su vida como estudiante de
+                        secundaria con su recién descubierta identidad como Spider-Man. En esta entrega, Peter lucha
+                        contra el villano Vulture mientras recibe orientación de su mentor, Tony Stark / Iron Man.
+                        "Spider-Man: De Regreso a Casa" fue elogiada por su tono fresco, las actuaciones del elenco y la
+                        incorporación del personaje dentro del MCU.</p>
+                    <a href="https://www.amazon.com/-/es/Tom-Holland/dp/B073HMHSFT/ref=sr_1_1?crid=MV4ZYR3GTBMB&dib=eyJ2IjoiMSJ9.zk-jiw2vQaedUOEdMBiSsqbbXXCqxgtpK2GmeOAQ-_lmvs58DopFkHIxSmAR5AwBQXT4d2mknUf8TX8z1M-4oJWPwoZfC_hLNaePVY-wxdjYyse8C4gWK2Opi_dPNbGQEla8g6LiUUbf6yy6MDHb9NUw87vtYansLkyCZW46oO5TvSo2b53JOEqpLusCaQ4NRUVhzezddHAvpRyEe42QRDEhAyaqJXfDSd3I3IZwUE0.d2xL8Xawct6ZX8TqLS0hbhXmFajdFxCqZQrCJ4lhGSU&dib_tag=se&keywords=spiderman+homecoming&qid=1709328392&s=instant-video&sprefix=spiderman+ho%2Cinstant-video%2C177&sr=1-1"
+                        target="_blank">Comprar película</a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -388,8 +464,13 @@
                     <p><b>Director:</b> Jon Watts</p>
                     <p><b>Protagonista:</b>Tom Holland</p>
                     <p><b>Estreno:</b>2 de julio de 2019.</p>
-                    <p> En esta entrega, Peter se embarca en unas vacaciones escolares por Europa, pero pronto se ve obligado a enfrentarse a nuevos desafíos cuando aparece el misterioso Quentin Beck / Mysterio. "Spider-Man: Lejos de Casa" recibió elogios por su acción, humor y las actuaciones del elenco, y también estableció importantes desarrollos en la trama del MCU después de los eventos de "Avengers: Endgame".</p>
-                     <a href="https://www.amazon.com/-/es/Tom-Holland/dp/B07TKZQFJC/ref=sr_1_4?crid=MV4ZYR3GTBMB&dib=eyJ2IjoiMSJ9.zk-jiw2vQaedUOEdMBiSsqbbXXCqxgtpK2GmeOAQ-_lmvs58DopFkHIxSmAR5AwBQXT4d2mknUf8TX8z1M-4oJWPwoZfC_hLNaePVY-wxdjYyse8C4gWK2Opi_dPNbGQEla8g6LiUUbf6yy6MDHb9NUw87vtYansLkyCZW46oO5TvSo2b53JOEqpLusCaQ4NRUVhzezddHAvpRyEe42QRDEhAyaqJXfDSd3I3IZwUE0.d2xL8Xawct6ZX8TqLS0hbhXmFajdFxCqZQrCJ4lhGSU&dib_tag=se&keywords=spiderman+homecoming&qid=1709329005&s=instant-video&sprefix=spiderman+ho%2Cinstant-video%2C177&sr=1-4" target="_blank">Comprar Película</a>
+                    <p> En esta entrega, Peter se embarca en unas vacaciones escolares por Europa, pero pronto se ve
+                        obligado a enfrentarse a nuevos desafíos cuando aparece el misterioso Quentin Beck / Mysterio.
+                        "Spider-Man: Lejos de Casa" recibió elogios por su acción, humor y las actuaciones del elenco, y
+                        también estableció importantes desarrollos en la trama del MCU después de los eventos de
+                        "Avengers: Endgame".</p>
+                    <a href="https://www.amazon.com/-/es/Tom-Holland/dp/B07TKZQFJC/ref=sr_1_4?crid=MV4ZYR3GTBMB&dib=eyJ2IjoiMSJ9.zk-jiw2vQaedUOEdMBiSsqbbXXCqxgtpK2GmeOAQ-_lmvs58DopFkHIxSmAR5AwBQXT4d2mknUf8TX8z1M-4oJWPwoZfC_hLNaePVY-wxdjYyse8C4gWK2Opi_dPNbGQEla8g6LiUUbf6yy6MDHb9NUw87vtYansLkyCZW46oO5TvSo2b53JOEqpLusCaQ4NRUVhzezddHAvpRyEe42QRDEhAyaqJXfDSd3I3IZwUE0.d2xL8Xawct6ZX8TqLS0hbhXmFajdFxCqZQrCJ4lhGSU&dib_tag=se&keywords=spiderman+homecoming&qid=1709329005&s=instant-video&sprefix=spiderman+ho%2Cinstant-video%2C177&sr=1-4"
+                        target="_blank">Comprar Película</a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -416,8 +497,17 @@
                     <p><b>Director:</b>Jon Watts</p>
                     <p><b>Protagonista:</b>Tom Holland</p>
                     <p><b>Estreno:</b>17 de diciembre de 2021</p>
-                    <p>Es la tercera entrega de la trilogía de Spider-Man protagonizada por Tom Holland. En esta película, Peter Parker se enfrenta a las consecuencias legales y personales después de que su identidad secreta sea revelada al mundo. La trama se desarrolla con la ayuda del Dr. Strange y la manifestación del multiverso, trayendo de vuelta a villanos como Duende Verde, Electro y Dr. Octopus. La película ha batido récords de taquilla, superando las expectativas con una recaudación de 260 millones de dólares en Estados Unidos en su primer fin de semana. 'Spider-Man: Sin Camino a Casa' ha sido elogiada por su cuidado fanservice, ritmo, desarrollo de personajes y efectos especiales, siendo considerada la mejor película de la trilogía del Hombre Araña del UCM</p>
-                    <a href="https://www.amazon.com/-/es/Tom-Holland/dp/B09NMFW4W7/ref=sr_1_1?crid=1C22X4FA0MD5D&dib=eyJ2IjoiMSJ9.KP_1aQWbgcRYJCAm1qRWa7fpkE7sWMYGekLxqNuK_dndc8geWHIc94_dlK6_dF1bYmGdYhC1ixBWiJQYU5VGVt-hzyOts6Za8M40oTmmk6RxqpdBwvTHUMyBk0f_gJRODqDVBMC08IEuoGyBrVZMwEgMtsz6c62oaVeJKlNSw-d65dvOxkenvdLVhHcbPmLqDy8PT6dtE2hxrAXsUneETV1YvcrflDaydA_M2GHw0q4.bIuCp5Pg5ZKHdg7y7F-g6UufXmGbGxqtwITDvhIXQW0&dib_tag=se&keywords=spider+man+no+way+home&qid=1709330442&s=instant-video&sprefix=spider%2Cinstant-video%2C424&sr=1-1" target="_blank">Comprar película</a>
+                    <p>Es la tercera entrega de la trilogía de Spider-Man protagonizada por Tom Holland. En esta
+                        película, Peter Parker se enfrenta a las consecuencias legales y personales después de que su
+                        identidad secreta sea revelada al mundo. La trama se desarrolla con la ayuda del Dr. Strange y
+                        la manifestación del multiverso, trayendo de vuelta a villanos como Duende Verde, Electro y Dr.
+                        Octopus. La película ha batido récords de taquilla, superando las expectativas con una
+                        recaudación de 260 millones de dólares en Estados Unidos en su primer fin de semana.
+                        'Spider-Man: Sin Camino a Casa' ha sido elogiada por su cuidado fanservice, ritmo, desarrollo de
+                        personajes y efectos especiales, siendo considerada la mejor película de la trilogía del Hombre
+                        Araña del UCM</p>
+                    <a href="https://www.amazon.com/-/es/Tom-Holland/dp/B09NMFW4W7/ref=sr_1_1?crid=1C22X4FA0MD5D&dib=eyJ2IjoiMSJ9.KP_1aQWbgcRYJCAm1qRWa7fpkE7sWMYGekLxqNuK_dndc8geWHIc94_dlK6_dF1bYmGdYhC1ixBWiJQYU5VGVt-hzyOts6Za8M40oTmmk6RxqpdBwvTHUMyBk0f_gJRODqDVBMC08IEuoGyBrVZMwEgMtsz6c62oaVeJKlNSw-d65dvOxkenvdLVhHcbPmLqDy8PT6dtE2hxrAXsUneETV1YvcrflDaydA_M2GHw0q4.bIuCp5Pg5ZKHdg7y7F-g6UufXmGbGxqtwITDvhIXQW0&dib_tag=se&keywords=spider+man+no+way+home&qid=1709330442&s=instant-video&sprefix=spider%2Cinstant-video%2C424&sr=1-1"
+                        target="_blank">Comprar película</a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -429,7 +519,7 @@
 
 
 
-  
+
 
 
 
