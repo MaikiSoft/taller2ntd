@@ -37,6 +37,7 @@ img{
     opacity: 0;
 }
 .intento:hover{
+  z-index: 1;
     transform: 
         perspective(250px)
         rotateX(10deg)
@@ -99,3 +100,6 @@ img{
   .bckInicio{
     background-image: linear-gradient(red, cornflowerblue);
   }
+.container{
+  z-index: 2;
+}
